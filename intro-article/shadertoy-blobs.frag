@@ -1,6 +1,8 @@
 uniform vec2 resolution;
 uniform float time;
 
+#define PARTICLE_COUNT 10
+
 // Square distance to a circle
 float circle( in vec2 p, in vec2 c, in float r) {
     return length(p-c) -r;
@@ -19,7 +21,7 @@ void main() {
 
     float f = 100.0;
     // Spawn 10 particles, orbiting the center
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < PARTICLE_COUNT; ++i) {
         // Radius of the orbit
         float R = 0.1 * float(i)+0.1;
         // Period of the orbit (Kepler's law)
