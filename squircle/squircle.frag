@@ -1,6 +1,6 @@
 // Square distance to a circle
 float squircle(in vec2 p, in vec2 c, in float r, in float n) {
-    return pow(abs(p.x -c.x)/r),n)  + pow(abs(p.y - c.y)/r, n)
+    return pow(abs(p.x  c.x)/r, n)  + pow(abs(p.y - c.y)/r, n)
 }
 
 uniform float n;
